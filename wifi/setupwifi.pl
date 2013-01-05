@@ -27,11 +27,11 @@ network={
 END
 
 #saving files
-open (INTERFACES_FILE, '>/home/pi/interfaces');#/etc/network/interfaces');
+open (INTERFACES_FILE, '>/etc/network/interfaces');
 print INTERFACES_FILE $interfaces;
 close (INTERFACES_FILE); 
 
-open (WPACONFFILE, '>/home/pi/wpa.conf'); #/etc/wpa.conf');
+open (WPACONFFILE, '>/etc/wpa.conf');
 print WPACONFFILE $wpaconf;
 close (WPACONFFILE); 
 
